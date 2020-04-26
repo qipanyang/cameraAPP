@@ -1,2 +1,2 @@
 # cameraAPP
-The main code is in /components/camera.js.
+The main code is in /components/CameraPage.js.
