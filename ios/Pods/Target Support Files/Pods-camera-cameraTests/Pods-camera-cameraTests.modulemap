@@ -1,0 +1,6 @@
+module Pods_camera_cameraTests {
+  umbrella header "Pods-camera-cameraTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
