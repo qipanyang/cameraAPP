@@ -1,12 +1,4 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
-import React from 'react';
+import React, {useState} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -17,12 +9,23 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import CameraPage from './components/CameraPage';
+import Home from './components/home'
 
 
 const App = () => {
-  return (
-  <CameraPage/>
-  );
+  const [page, setpage] = useState(1);
+  if (page == 1){
+    return (
+        <Home
+            pagestate={{page, setpage}}
+        />
+    )
+  }
+  else{
+    return(
+        <CameraPage/>
+    )
+  }
 };
 
 
