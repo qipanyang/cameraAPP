@@ -19,13 +19,14 @@ class CameraPage extends React.Component {
     this.takePicture = this.takePicture.bind(this);
     this.state = {
       flashMode: RNCamera.Constants.FlashMode.off,
-      exposure: 0.5,
+      exposure: 0.1,
       autoFocus: RNCamera.Constants.AutoFocus.on,
+      resolution: 'High',
     };
   }
 
   render() {
-    const {flashMode, exposure, autoFocus} = this.state;
+    const {flashMode, exposure, autoFocus, resolution} = this.state;
     return (
       <View style={styles.container}>
         <View style={styles.container}>
@@ -34,11 +35,11 @@ class CameraPage extends React.Component {
               this.camera = ref;
             }}
             style={styles.preview}
-            type={RNCamera.Constants.Type.back}
+            type={RNCamera.Constants.Type.front}
             flashMode={flashMode}
             exposure={exposure}
             autoFocus={autoFocus}
-            pictureSize={'352x288'}
+            pictureSize={resolution}
           />
         </View>
         <View>
