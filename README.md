@@ -1,14 +1,14 @@
 # cameraAPP
 ## 1.	Environment setup
-Install NodeJS 
+### Install NodeJS 
 
 https://nodejs.org/en/download/
 		
-Install xcode (for mojave, only xcode 11.3 is available.) 
+### Install xcode (for mojave, only xcode 11.3 is available.) 
 
 https://developer.apple.com/download/more/
   
-install cocoapods: 
+### Install cocoapods: 
   
 brew install cocoapods --build-from-source && brew link --overwrite cocoapods
 
