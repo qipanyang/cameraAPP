@@ -22,9 +22,8 @@ brew install cocoapods --build-from-source && brew link --overwrite cocoapods
 1. clone this repo
 ```
 git clone https://github.com/qipanyang/cameraAPP
-
 ```
-2. connect your iPhone with the computer through a cabel
+2. connect your iPhone with the computer through a cable
 
 3. Double click ./camearaApp/ios/camera.xcworkspace to open the project with Xcode
 
@@ -43,16 +42,20 @@ git clone https://github.com/qipanyang/cameraAPP
 10. Click run button in the top menu in Xcode to build and run
 
 
-## usage
-- Click go to camera on the home page.
+## Usage
+- Connect your iPhone with the computer through a cable
+
+- Double click ./camearaApp/ios/camera.xcworkspace to open the project with Xcode. Then click run button in the top menu to run the app on your phone. 
+
+- In the app, click go to camera on the home page.
 
 - Click snap to take a picture, and the picturn will be saved in your album.
 
 - For exposure and resolution settings, open the file .cameraApp/components/CameraPage.js and make a change on line 22 and 24.
 
-The valid value for exposure are float numbers from 0 to 1 and -1(default). 
+    The valid value for exposure are float numbers from 0 to 1 and -1(default). 
 
-The valid resolution options for front camera on iPhone 8 are "High", "Medium", "Low", "1280x720" and "None".
+    The valid resolution options for front camera on iPhone 8 are "High", "Medium", "Low", "1280x720" and "None".
 
 
 ## Acknowledgements
