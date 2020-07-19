@@ -14,6 +14,7 @@ import CameraRoll, {saveToCameraRoll} from '@react-native-community/cameraroll';
 import {Col, Row, Grid} from 'react-native-easy-grid';
 
 class CameraPage extends React.Component {
+
   constructor(props) {
     super(props);
     this.takePicture = this.takePicture.bind(this);
@@ -35,7 +36,7 @@ class CameraPage extends React.Component {
               this.camera = ref;
             }}
             style={styles.preview}
-            type={RNCamera.Constants.Type.front}
+            type={RNCamera.Constants.Type.back}
             flashMode={flashMode}
             exposure={exposure}
             autoFocus={autoFocus}
